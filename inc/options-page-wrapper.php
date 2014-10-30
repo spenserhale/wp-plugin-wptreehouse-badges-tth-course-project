@@ -1,9 +1,3 @@
-<?php
-
-global $plugin_url;
-
-?>
-
 <div class="wrap">
 
 	<div id="icon-options-general" class="icon32"></div>
@@ -18,12 +12,17 @@ global $plugin_url;
 
 				<div class="meta-box-sortables ui-sortable">
 
+					<?php if( !isset($wptreehouse_username) || $wptreehouse_username === '') : ?>
+
 					<div class="postbox">
 
 						<h3><span>Let's Get Started!</span></h3>
 						<div class="inside">
 
-							<form method="post" action="">
+							<form name="wptreehouse_username_form" method="post" action="">
+
+								<input name="wptreehouse_form_submitted" id="wptreehouse_form_submitted" type="hidden" value="Y" />
+
 								<table class="form-table">
 									<tr>
 										<td><label for="wptreehouse_username">Treehouse username</label></td>
@@ -40,6 +39,8 @@ global $plugin_url;
 						</div> <!-- .inside -->
 
 					</div> <!-- .postbox -->
+
+					<?php else: ?>
 
 					<div class="postbox">
 
@@ -74,6 +75,8 @@ global $plugin_url;
 
 					</div> <!-- .postbox -->
 
+					<?php endif; ?>
+
 
 				</div> <!-- .meta-box-sortables .ui-sortable -->
 
@@ -83,6 +86,8 @@ global $plugin_url;
 			<div id="postbox-container-1" class="postbox-container">
 
 				<div class="meta-box-sortables">
+
+					<?php if( isset($wptreehouse_username) && $wptreehouse_username !== '') : ?>
 
 					<div class="postbox">
 
@@ -101,6 +106,8 @@ global $plugin_url;
 						</div> <!-- .inside -->
 
 					</div> <!-- .postbox -->
+
+					<?php endif; ?>
 
 				</div> <!-- .meta-box-sortables -->
 
