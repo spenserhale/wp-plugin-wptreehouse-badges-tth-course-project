@@ -52,8 +52,6 @@ function wptreehouse_badges_options_page() {
 
 	}
 
-	global $plugin_url;
-
 	require('inc/options-page-wrapper.php');
 
 }

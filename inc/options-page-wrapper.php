@@ -1,3 +1,9 @@
+<?php
+
+global $plugin_url;
+
+?>
+
 <div class="wrap">
 
 	<div id="icon-options-general" class="icon32"></div>
