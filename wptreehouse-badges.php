@@ -12,6 +12,13 @@
 */
 
 /*
+ *	Assign global variables
+ *
+*/
+
+$plugin_url = WP_PLUGIN_URL . '/wptreehouse-badges';
+
+/*
  *	Add a link to our plugin in the admin menu
  *	under 'Settings > Treehouse Badges'
  *
@@ -45,7 +52,7 @@ function wptreehouse_badges_options_page() {
 
 	}
 
-	echo '<p>Welcome to our plugin page!</p>';
+	require('inc/options-page-wrapper.php');
 
 
 }
