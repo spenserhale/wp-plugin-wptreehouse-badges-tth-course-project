@@ -20,7 +20,7 @@
 							<form method="post" action="">
 								<table class="form-table">
 									<tr>
-										<td><label for="wptreehouse_username"Treehouse username</label></td>
+										<td><label for="wptreehouse_username">Treehouse username</label></td>
 										<td>
 											<input name="wptreehouse_username" id="wptreehouse_username" type="text" value="" class="regular-text" />
 										</td>
