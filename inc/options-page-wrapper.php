@@ -110,9 +110,10 @@
 								<p>
 									<label for="wptreehouse_username">Username</label>
 								</p>
-
 								<p>
 									<input name="wptreehouse_username" id="wptreehouse_username" type="text" value="<?php if(isset($wptreehouse_username) ) echo $wptreehouse_username; ?>" />
+								</p>
+								<p>
 									<input class="button-primary" type="submit" name="wptreehouse_username_submit" value="Update" />
 								</p>
 							</form>
